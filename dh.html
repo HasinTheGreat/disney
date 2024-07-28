@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney+ Hotstar Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #141b29;
+            color: #ffffff;
+        }
+
+        .navbar {
+            background-color: #1f80e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            color: white;
+        }
+
+        .navbar-logo img {
+            height: 30px;
+        }
+
+        .navbar-search input {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 20px;
+            width: 300px;
+        }
+
+        .navbar-menu a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .navbar-menu a:hover {
+            color: #dfe3ee;
+        }
+
+        .main-container {
+            margin-top: 70px;
+            padding: 20px;
+        }
+
+        .hero {
+            position: relative;
+            height: 400px;
+            background: url('https://image.tmdb.org/t/p/original/or06FN3Dka5tukK1e9sl16pB3iy.jpg') no-repeat center center/cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .hero-title {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .hero-description {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .card-container {
+            display: flex;
+            overflow-x: scroll;
+            gap: 10px;
+        }
+
+        .card {
+            flex: 0 0 auto;
+            width: 200px;
+            background: #1c2333;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 500;
+            padding: 10px;
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: #b0b3b8;
+            padding: 0 10px 10px;
+        }
+
+        .footer {
+            background-color: #141b29;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #b0b3b8;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            Disney+ Hotstar
+        </div>
+        <div class="navbar-search">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="navbar-menu">
+            <a href="#">Home</a>
+            <a href="#">TV</a>
+            <a href="#">Movies</a>
+            <a href="#">Sports</a>
+            <a href="#">Kids</a>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="hero">
+            <div class="hero-content">
+                <div class="hero-title">Avengers: Endgame</div>
+                <div class="hero-description">After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more to reverse Thanos' actions and restore balance to the universe.</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Trending Now</div>
+            <div class="card-container">
+                <div class="card">
+                   <img src="https://m.media-amazon.com/images/I/71Q1Iu4suSL._AC_SY679_.jpg" alt="Harry Potter">
+                    <div class="card-title">Harry Potter</div>
+                    <div class="card-description">The story begins when 11-year-old orphan Harry discovers that his parents were wizards and he starts his education in magic at Hogwart's School of Witchcraft and Wizardry.</div>
+                </div>
+                <div class="card">
+                    <img src="https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg" alt="Wonder Woman 1984">
+                    <div class="card-title">Wonder Woman 1984</div>
+                    <div class="card-description"> Diana Prince comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe in the form of the Cheetah</div>
+                </div>
+                <div class="card">
+                    <img src="https://image.tmdb.org/t/p/w500/xGexTKCJDkl12dTW4YCBDXWb1AD.jpg" alt="Money Heist">
+                    <div class="card-title">Money Heist</div>
+                    <div class="card-description">The show is about a criminal mastermind called "The Professor" who recruits eight people to help him carry out an ambitious plan to rob the Royal Mint of Spain of €984 million.</div>
+                </div>
+                <div class="card">
+                    <img src="https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" alt="Joker">
+                    <div class="card-title">Joker</div>
+                    <div class="card-description">In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime.</div>
+                </div>
+                <div class="card">
+                    <img src="https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" alt="Parasite">
+                    <div class="card-title">Parasite</div>
+                    <div class="card-description">Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">New Releases</div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://image.tmdb.org/t/p/w500/k68nPLbIST6NP96JmTxmZijEvCA.jpg" alt="Tenet">
+                    <div class="card-title">Tenet</div>
+                    <div class="card-description">Armed with only one word—Tenet—and fighting for the survival of the entire world, a Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time.</div>
+                </div>
+                <div class="card">
+                    <img src="https://image.tmdb.org/t/p/w500/aKx1ARwG55zZ0GpRvU2WrGrCG9o.jpg" alt="Mulan">
+                    <div class="card-title">Mulan</div>
+                    <div class="card-description">A young Chinese maiden disguises herself as a male warrior in order to save her father.</div>
+                </div>
+                <div class="card">
+                    <img src="https://image.tmdb.org/t/p/w500/2bXbqYdUdNVa8VIWXVfclP2ICtT.jpg" alt="The Lion King">
+                    <div class="card-title">The Lion King</div>
+                    <div class="card-description">After the murder of his father, a young lion prince flees his kingdom only to learn the true meaning of responsibility and bravery.</div>
+                </div>
+                <div class="card">
+                     <img src="https://image.tmdb.org/t/p/w500/ugZW8ocsrfgI95pnQ7wrmKDxIe.jpg" alt="Hard Kill">
+                    <div class="card-title">Hard Kill</div>
+                    <div class="card-description">Hard Kill is a 2020 American action thriller film about a billionaire tech CEO who hires mercenaries to protect his valuable work after a terrorist group kidnaps his daughter to get it.</div>
+                </div>
+                <div class="card">
+                     <img src="https://m.media-amazon.com/images/I/51zUbui+gbL._AC_.jpg" alt="The Shawshank Redemption">
+                    <div class="card-title">The Shawshank Redemption</div>
+                    <div class="card-description">The Shawshank Redemption is a 1994 drama film about a banker named Andy Dufresne (Tim Robbins) who is wrongly convicted of murdering his wife and her lover and sentenced to life in prison. </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2024 Disney+ Hotstar Clone. All rights reserved.
+    </div>
+
+    <script>
+        // Minimal JavaScript for basic interactions can be added here
+    </script>
+</body>
+</html>
